@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdUploaded">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/Adslider"
+            android:layout_width="fill_parent"
+            android:layout_height="200sp"
+            android:background="@color/grey"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cvdetails">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="2dp"
+                android:layout_alignParentStart="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Total Amount"/>
+
+                    <Button
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/bbook"
+                        android:layout_weight="1"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingRight="12dp"
+                        android:paddingLeft="12dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Book now"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:background="@drawable/background"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="13dp"
+                        android:text="@string/click"
+                        android:textSize="13dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:textColor="@color/black"/>
+                    <!---
+                                    <Button
+                                        android:id="@+id/bcontact"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="Contact"
+                                        android:textColor="@color/white"
+                                        android:textSize="18dp"
+                                        android:background="@color/colorPrimary"/>
+                                        !-->
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60sp"
+                android:id="@+id/scroll">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:background="@color/colorPrimaryDark"/>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/xyz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Location"
+                                android:layout_marginTop="20dp"
+                                android:paddingLeft="20dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:id="@+id/location"
+                                android:layout_below="@+id/xyz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="25dp"
+                                android:textSize="13dp"
+                                android:paddingRight="15dp"
+                                android:textColor="@color/darkGrey"
+                                android:layout_marginTop="7dp"/>
+
+                            <TextView
+                                android:id="@+id/abc"
+                                android:layout_below="@+id/location"
+                                android:layout_width="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:textSize="15dp"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="20dp"
+                                android:text="Description"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/desc"
+                                android:layout_below="@+id/abc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="25dp"
+                                android:paddingRight="15dp"
+                                android:textSize="13dp"
+                                android:textColor="@color/darkGrey"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginBottom="40dp"/>
+
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10sp"
+                        android:elevation="15sp"
+                        android:layout_margin="10sp"
+                        android:background="@color/colorPrimaryDark"
+                        android:backgroundTint="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:id="@+id/comments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5sp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="20sp"
+                            android:text="See Comments"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"/>
+
+                    </android.support.v7.widget.CardView>
+                    <!---
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:elevation="15sp"
+
+                                        android:layout_marginBottom="10sp"
+                                        android:layout_marginTop="20sp"
+                                        android:background="@color/colorPrimary"
+                                        android:backgroundTint="@color/colorPrimaryDark">
+
+                                        <TextView
+                                            android:id="@+id/tvprice"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5sp"
+                                            android:textSize="25sp"
+                                            android:textColor="@color/white"
+                                            android:textAlignment="center"/>
+
+                                    </android.support.v7.widget.CardView>
+
+
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="10sp"
+                                        android:elevation="15sp"
+                                        android:layout_margin="10sp"
+                                        android:background="@color/colorPrimary"
+                                        android:backgroundTint="@color/colorPrimary">
+
+                                    <TextView
+                                        android:id="@+id/tvtagline"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5sp"
+                                        android:textAlignment="center"
+                                        android:textSize="20sp"
+                                        android:textColor="@color/white"/>
+
+                                    </android.support.v7.widget.CardView>
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10sp"
+                                        android:background="@color/colorPrimary"
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:elevation="15sp"
+                                        app:cardCornerRadius="10sp">
+
+                                        <TextView
+                                            android:id="@+id/tvwindows"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5sp"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/white"
+                                            android:textSize="20sp" />
+
+                                    </android.support.v7.widget.CardView>
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="10sp"
+                                        android:elevation="15sp"
+                                        android:layout_margin="10sp"
+                                        android:background="@color/colorPrimary"
+                                        android:backgroundTint="@color/colorPrimary">
+
+                                    <TextView
+                                        android:id="@+id/tvalmirah"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5sp"
+                                        android:textSize="20sp"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"/>
+
+                                    </android.support.v7.widget.CardView>
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:cardCornerRadius="10sp"
+                                        android:elevation="15sp"
+                                        android:layout_margin="10sp"
+                                        android:background="@color/colorPrimary"
+                                        android:backgroundTint="@color/colorPrimary">
+
+                                        <TextView
+                                            android:id="@+id/comments"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5sp"
+                                            android:textSize="20sp"
+                                            android:text="See Comments"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/white"/>
+
+                                    </android.support.v7.widget.CardView>
+                    !-->
+
+                    <com.google.android.gms.ads.AdView
+                        xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        ads:adSize="LARGE_BANNER"
+                        ads:adUnitId="ca-app-pub-6950521191905333/8328475959">
+                    </com.google.android.gms.ads.AdView>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

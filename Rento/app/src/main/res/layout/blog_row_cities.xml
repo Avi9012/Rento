@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/cardview2"
+    android:elevation="5sp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/black"
+        android:id="@+id/tvline"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/tvpostalcode"
+    android:textSize="20dp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginTop="4sp"
+    android:layout_marginBottom="4sp"
+    android:textColor="@color/black"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/tvcity"
+    android:textSize="20dp"
+    android:layout_marginLeft="150sp"
+    android:textColor="@color/black"
+    android:layout_marginTop="4sp"
+    android:layout_marginBottom="4sp"/>
+
+
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PublishedAds">
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="40sp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lluser"
+        android:layout_margin="5sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="15sp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/grey">
+
+                <ImageView
+                    android:layout_width="360sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/ivrentoad"
+                    android:visibility="gone"
+
+                    />
+
+            </RelativeLayout>
+
+
+    <com.pkmmte.view.CircularImageView
+        android:layout_width="140sp"
+        android:layout_height="140sp"
+        android:src="@drawable/userpic"
+        android:layout_gravity="center"
+        android:layout_margin="8sp"
+        android:id="@+id/ivuserpic"
+        android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="User Name"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10sp"
+            android:id="@+id/tvusername"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Phone number"
+                    android:layout_marginLeft="10sp"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Phone number"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10sp"
+                    android:id="@+id/tvpnum"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Current City"
+                    android:layout_marginLeft="10sp"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Current City"
+                    android:layout_marginRight="10sp"
+                    android:id="@+id/tvcurrentcity"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8sp">
+
+        <EditText
+            android:id="@+id/profname"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:hint="Name"
+            android:layout_marginLeft="10sp"
+            android:textSize="18dp"
+            android:focusableInTouchMode="true"
+            />
+
+        <Button
+            android:id="@+id/namedone"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:background="@drawable/background"
+            android:textColor="@color/white"
+            android:text="Done"/>
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8sp">
+
+                <EditText
+                    android:id="@+id/profemail"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:hint="Email"
+                    android:layout_marginLeft="10sp"
+                    android:focusableInTouchMode="true"
+                    android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/emaildone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:background="@drawable/background"
+                    android:textColor="@color/white"
+                    android:text="Done"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8sp">
+
+                <EditText
+                    android:id="@+id/proffb"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:hint="FB Username"
+                    android:layout_marginLeft="10sp"
+                    android:focusableInTouchMode="true"
+                    android:textSize="18dp"/>
+                <Button
+                    android:id="@+id/fbdone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:background="@drawable/background"
+                    android:textColor="@color/white"
+                    android:text="Done"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8sp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="10sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="10sp"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignRight="@+id/text1"
+                    android:text="Watch Ad"
+                    android:layout_marginLeft="8sp"
+                    android:background="@drawable/background"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="6sp"
+            android:elevation="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Published ADs"
+                android:layout_margin="8sp"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="4sp"/>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:id="@+id/rvmyads"
+            android:orientation="horizontal">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="6sp"
+            android:elevation="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Liked ADs"
+                android:layout_margin="8sp"
+                android:textSize="14sp"
+                android:textAlignment="center"/>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/rvlikedads"
+            android:orientation="horizontal">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+
+</ScrollView>
+
+    <Button
+android:id="@+id/bmaps"
+android:layout_width="match_parent"
+android:layout_height="40sp"
+android:layout_alignParentBottom="true"
+android:background="@color/colorPrimaryDark"
+android:text="Post Free Ad"
+android:textColor="@color/white"
+android:textSize="19dp"/>
+
+
+</RelativeLayout>

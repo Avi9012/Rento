@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nalmirah">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"3+"</item>
+    </string-array>
+    <string-array name="nwindow">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"3+"</item>
+    </string-array>
+    <string-array name="roomtype">
+        <item>"No Preference"</item>
+        <item>"Boys Only"</item>
+        <item>"Girls Only"</item>
+        <item>"For Couples"</item>
+        <item>"For Family"</item>
+        <item>"Hostel for boys"</item>
+        <item>"Hostel for Girls"</item>
+        <item>"For Office"</item>
+
+
+    </string-array>
+
+</resources>

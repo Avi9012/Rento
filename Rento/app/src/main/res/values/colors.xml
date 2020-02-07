@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#047BD5</color>
+    <color name="blue">	#1060D3</color>
+    <color name="colorPrimaryDark">#002E6E</color>
+    <color name="colorAccent">#047BD5</color>
+    <color name="bg_currloc">#4f4747</color>
+    <color name="gradStop">#23A7D8</color>
+    <color name="black">#000000</color>
+    <color name="search_colour">#dad369</color>
+    <color name="button_proceed_bg">#4b82e8</color>
+    <color name="online">#1fe704</color>
+    <color name="orange">#fa8202</color>
+    <color name="offline">#e11111</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#ccdbd1d1</color>
+    <color name="darkGrey">#CC636161</color>
+</resources>

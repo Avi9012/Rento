@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Rento</string>
+    <string name="tnc">Rento</string>
+    <string name="AppId">ca-app-pub-6950521191905333~9815042977</string>
+    <string name="ReId">ca-app-pub-6950521191905333/2537626051</string>
+    <string name="click">By Proceeding, you accept our policies.</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

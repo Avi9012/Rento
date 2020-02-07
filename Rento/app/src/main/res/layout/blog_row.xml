@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="25sp"
+    android:layout_marginLeft="5sp"
+    android:layout_marginRight="5sp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5sp"
+    android:id="@+id/cardview"
+    app:cardCornerRadius="10sp"
+    app:cardElevation="6sp">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ProgressBar
+            android:id="@+id/pbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="142dp"
+            android:layout_marginTop="43dp"
+            android:indeterminateTint="@color/black"
+            android:visibility="gone"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/name_tv_items"
+                android:orientation="horizontal"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name_tv_items"
+                            android:layout_width="0sp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="6sp"
+                            android:layout_marginTop="6sp"
+                            android:text=""
+                            android:gravity="left"
+                            android:layout_weight="6"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textSize="15sp"
+                            android:textStyle="italic"
+                            />
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="25sp"
+                            android:layout_weight="2"
+                            android:id="@+id/like"
+                            android:layout_marginTop="15sp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/like"
+                           />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/partneraval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8sp"
+                        android:text="availability"
+                        android:textSize="10sp"
+                        android:layout_marginBottom="3sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/locality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8sp"
+                        android:text="Locality"
+                        android:textSize="10sp"
+                        android:layout_marginBottom="3sp"
+                        />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:text="Approve"
+                        android:visibility="gone"
+                        android:id="@+id/bapprove"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

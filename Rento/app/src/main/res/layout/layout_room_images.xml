@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            android:id="@+id/ivcityimage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:text="Name of City"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:id="@+id/tvcityname"
+            android:textAllCaps="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="40sp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:gravity="left"
+            android:text="Rento App"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:padding="12sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+        />
+
+
+        <EditText
+            android:id="@+id/loginname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#fff"
+            android:hint="Enter User Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+        />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#fff"
+            android:hint="Enter Phone Number"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="10dp"
+            />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#fff"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120sp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="New Registrations here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15dp" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+

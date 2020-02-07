@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/badd"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/ic_add_to_photos_black_24dp"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="left"
+                android:layout_marginRight="5sp"
+                android:background="@color/white"/>
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llimages"
+            android:layout_margin="5sp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager2"
+                android:layout_width="300sp"
+                android:layout_height="300sp"
+                android:layout_margin="2sp"
+                android:background="@drawable/rento"
+                android:adjustViewBounds="true"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:id="@+id/next"
+                android:layout_gravity="center_horizontal"
+                android:text="Click (+) button to add image"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rg"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room"
+                    android:textColor="@color/black"
+                    android:id="@+id/rbroom"
+                    android:layout_marginLeft="15sp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flat"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10sp"
+                    android:id="@+id/rbflat"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="House"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10sp"
+                        android:id="@+id/rbhouse"/>
+
+            </RadioGroup>
+
+
+
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:singleLine="true"
+            android:id="@+id/housenumber"
+            android:paddingLeft="15dp"
+            android:hint="House Number "
+            android:inputType="text"
+            android:paddingRight="15dp"
+            android:textSize="15sp"
+            android:layout_margin="10sp"
+            />
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:id="@+id/landmark"
+            android:paddingLeft="15dp"
+            android:hint="Landmark "
+            android:inputType="text"
+            android:paddingRight="15dp"
+            android:textSize="15sp"
+            android:layout_margin="10sp"
+            />
+
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:id="@+id/title12"
+            android:paddingLeft="15dp"
+            android:hint="Description "
+            android:inputType="text"
+            android:paddingRight="15dp"
+            android:textSize="15sp"
+            android:layout_margin="10sp"
+            />
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:id="@+id/Price12"
+            android:paddingLeft="15dp"
+
+            android:hint="Price per month"
+            android:paddingRight="15dp"
+            android:textSize="15sp"
+            android:layout_margin="10sp"/>
+
+
+
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textAutoComplete"
+            android:id="@+id/desc"
+            android:paddingLeft="15dp"
+            android:hint="Complete Address"
+            android:maxLines="2"
+            android:paddingRight="15dp"
+            android:textSize="15sp"
+            android:layout_margin="10sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvareasup"
+            android:layout_marginTop="2sp"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textAutoComplete"
+            android:id="@+id/tvarea"
+            android:paddingLeft="15dp"
+            android:hint="Choose from list or type to add"
+            android:maxLines="2"
+            android:paddingRight="15dp"
+            android:textSize="15sp"
+            android:layout_margin="10sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="11sp">
+
+            <Spinner
+                android:id="@+id/swindows"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                >
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. of windows"
+                android:layout_marginLeft="20sp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="11sp">
+
+            <Spinner
+                android:id="@+id/salmirah"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                >
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. of Almirahs"
+                android:layout_marginLeft="20sp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="11sp">
+
+            <Spinner
+                android:id="@+id/spreference"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                >
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select preference"
+                android:layout_marginLeft="15sp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:text="Promote the Ad ?   "
+                android:id="@+id/recommendedswitch"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <Button
+
+            android:id="@+id/buttonUplaod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:text="Post Free AD"
+
+            />
+
+    </LinearLayout>
+</ScrollView>
